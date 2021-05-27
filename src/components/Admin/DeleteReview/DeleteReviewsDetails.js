@@ -3,7 +3,7 @@ import React from 'react';
 const DeleteReviewsDetails = ({reviews}) => {
     const deleteReviews= (id) => {
         console.log('id is : ', id);
-        fetch(`http://localhost:6600/deleteReviews/${id}`, {
+        fetch(`https://floating-wave-39867.herokuapp.com/deleteReviews/${id}`, {
             method: 'DELETE'
         })
             .then(res => res.json())
