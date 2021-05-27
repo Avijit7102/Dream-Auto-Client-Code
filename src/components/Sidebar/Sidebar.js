@@ -42,6 +42,9 @@ const Sidebar = () => {
                     <li>
                         <Link className="text-white" to="/deleteService"><i class="far fa-trash-alt mr-2"></i>Delete Service</Link>
                     </li>
+                    <li>
+                        <Link className="text-white" to="/deleteReviews"><i class="far fa-trash-alt mr-2"></i>Delete Reviews</Link>
+                    </li>
                     </div>}
                     
                     <li>

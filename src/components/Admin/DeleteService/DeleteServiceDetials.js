@@ -4,7 +4,7 @@ const DeleteServiceDetials = ({pd}) => {
 
     const deleteProduct = (id) => {
         console.log('this id: ', id);
-        fetch(`https://floating-wave-39867.herokuapp.com/deleteService/${id}`, {
+        fetch(`http://localhost:6600/deleteService/${id}`, {
             method: 'DELETE'
         })
             .then(res => res.json())

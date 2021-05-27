@@ -17,6 +17,7 @@ import Checkout from './components/Home/Services/Checkout/Checkout';
 import OrderStatus from './components/Admin/OrderStatus/OrderStatus';
 import YourOrder from './components/Home/Services/YourOrder/YourOrder';
 import AddReview from './components/Home/Services/AddReview/AddReview';
+import DeleteReviews from './components/Admin/DeleteReview/DeleteReviews';
 export const userContext = createContext();
 
 function App() {
@@ -59,6 +60,9 @@ function App() {
         </PrivateRoute>
         <PrivateRoute path="/checkout/:id">
             <Checkout></Checkout>
+        </PrivateRoute>
+        <PrivateRoute path="/deleteReviews">
+            <DeleteReviews></DeleteReviews>
         </PrivateRoute>
       </Switch>
     </Router>
